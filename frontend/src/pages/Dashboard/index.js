@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
+import { Link } from 'react-router-dom';
 import api from '../../services/api';
 
 import './styles.css';
@@ -35,6 +35,12 @@ export default function Dashboard() {
                     </li>
                 ))}
             </ul>
+
+            <Link to='/new'>
+                <button className="btn">
+                    Cadastrar Novo Spot
+                </button>
+            </Link>
         </>
     )
 }
