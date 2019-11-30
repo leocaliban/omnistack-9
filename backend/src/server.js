@@ -12,7 +12,7 @@ mongoose.connect('mongodb+srv://leocaliban:leocaliban@cluster0-lt070.mongodb.net
 
 app.use(cors());
 app.use(express.json());
-app.use('/files', express.static(path.resolve(__dirname, '..', 'uplpads')));
+app.use('/files', express.static(path.resolve(__dirname, '..', 'uploads')));
 app.use(routes);
 
 app.listen(3333);
