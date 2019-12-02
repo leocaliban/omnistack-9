@@ -26,8 +26,8 @@ routes.post('/spots/:spot_id/bookings', BookingController.store);
 routes.get('/dashboard', DashboardController.show);
 
 // Notifications (Accept, Reject)
-routes.post('/bookings:booking_id/approvals', ApprovalController.store);
+routes.post('/bookings/:booking_id/approvals', ApprovalController.store);
 
-routes.post('/bookings:booking_id/rejections', RejectionController.store);
+routes.post('/bookings/:booking_id/rejections', RejectionController.store);
 
 module.exports = routes;
